@@ -1,0 +1,90 @@
+.Home{
+
+}
+.Banner{
+
+}
+.Banner__sale{
+    background-color: #161616;
+}
+.sale__content{
+}
+.sale__title{
+    color: #fff;
+    font-size: 1.4rem;
+    padding:10px 0px ;
+    text-align: center;
+    /* font-weight: 300; */
+    transition: 0.4s;
+}
+.sale__title a{
+    color: #cebd9c!important;
+    margin-left: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: 0.4s;
+
+}
+.sale__title a:hover {
+    letter-spacing: 2px;
+}
+.Home_List{
+}
+.List_title{
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    /* padding-bottom: 20px;
+    padding-top: 40px; */
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.List_title h1{
+    font-size: 3rem;
+}
+.List_title_menu{
+    display: flex;
+    list-style: none;
+}
+.List_title_item a{
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 0 20px;
+    line-height: 78px;
+    display: inline-block;
+    position: relative;
+    margin: 0 3px;
+}
+.List_title_item a::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+a.activated::after{
+    display: block;
+}
+.List_title_item a:hover::after {
+
+    display: block;
+}
+.Home_custom{
+    background-color: #F3EAD8;
+    padding: 80px 0px;
+}
+@media (max-width:63.9375em) {
+    .List_title{
+        width: 100%;
+        
+    }
+    .List_title_menu{
+        /* margin: 20px 0px; */
+    }
+}

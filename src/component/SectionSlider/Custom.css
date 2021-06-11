@@ -1,0 +1,24 @@
+.custom_container{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    max-width: 100%;
+}
+.Custom_title{
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 20px 10px;
+}
+.Custom_content{
+    font-size: 1.6rem;
+    padding: 20px 0px;
+}
+.Custom_customer{
+    font-size: 1.4rem;
+}
+.customer_name{
+    padding: 10px;
+}
+.customer_job{
+   
+}

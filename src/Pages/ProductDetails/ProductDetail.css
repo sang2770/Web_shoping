@@ -1,0 +1,157 @@
+.ProductDetails{
+
+}
+.Details_container{
+    background-color: var(--red-color);
+    padding: 30px 40px ;
+}
+.Detail_img{
+}
+.Detail_content{
+    color: #fff;
+    padding: 40px 20px;
+}
+.Detail_name{
+    font-size: 4rem;
+}
+.Detail_author{
+    font-size: 1.4rem;
+    padding: 20px;
+}
+.Detail_Prince{
+    font-size: 3.2rem;
+    display: flex;
+    align-items: center;
+}
+.Detail_Prince span
+{
+    font-size: 3rem;
+    text-decoration: line-through  #ccc;
+    padding: 0px 20px;
+}
+.Detail_stars{
+    list-style: none;
+    display: flex;
+}
+.Detail_star{
+    font-size: 1.6rem;
+    padding: 10px 5px;
+}
+.Detail_options{
+    padding: 40px 0px;
+    display: flex;
+    align-items: center;
+}
+.btn_Detail{
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.AddToCart{
+    border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+    padding: 0 !important;
+}
+.btn_Detail h3{
+    font-size: 1.6rem;
+    position: relative;
+    padding: 20px 30px;
+    color: #fff ;
+    z-index: 1000;
+}
+.AddToCart::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: block;
+    background-color: #fff;
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: 0.5s;
+}
+.AddToCart:hover::before{
+    transform: translateX(0);
+    
+}
+.AddToCart:hover h3{
+    color: rgb(58, 56, 56);
+}
+.Share {
+    border: 2px solid #ccc;
+    margin-left: 10px;
+    border-radius: 100%;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    padding: 0 !important;
+}
+.Share h3{
+    padding:15px ;
+    font-size: 2.2rem;
+}
+.Share::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: block;
+    background-color: #fff;
+    z-index: 1;
+    transform: translateY(-100%);
+    transition: 0.5s;
+}
+.Share:hover::before{
+    transform: translateY(0);
+}
+.Share:hover h3{
+    color: #000;
+}
+.Menu_View{
+    display: flex;
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+    margin: 40px 0 40px 0;
+}
+.View_Item{
+    font-size: 2rem;
+    padding: 5px;
+    line-height: 40px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+}
+.View_Item::after{
+    content: "";
+    background-color: var(--red-color);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+.View_Item:hover::after{
+    display: block;
+}
+.View_context{
+    padding: 40px 20px;
+    font-size: 1.4rem;
+    width: 60%;
+    min-height: 200px;
+    
+}
+.View_context p{
+
+    line-height: 2rem;
+    text-align: justify;
+}
+@media (max-width:63.9375em) {
+
+}

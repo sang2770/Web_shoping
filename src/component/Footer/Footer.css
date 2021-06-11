@@ -1,0 +1,184 @@
+.Footer{
+    background-color: #171613;
+    color: #fff;
+}
+.ScrollToTop{
+    position: fixed;
+    bottom:20px;
+    right:20px;
+    background-color: var(--red-color);
+    padding: 20px;
+    border-radius: 100%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    opacity: 0.5;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.ScrollToTop:hover{
+    opacity: 1;
+    font-size: 1.5rem;
+}
+.Footer_contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(230, 204, 204);
+    width: 100%;
+    flex-wrap: wrap;
+}
+.Contact_Title{
+    width: 30%;
+}
+.Contact_Title h1{
+    font-size: 2.4rem;
+    padding: 5px 0px;
+    font-weight: 600;
+}
+.Contact_Title p{
+    font-size: 1.4rem;
+    padding: 5px 4px;
+}
+.Contact_form{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-around;
+}
+.form-control{
+    font-size: 1.8rem;
+    outline: none;
+    border: none;
+    padding:20px;
+    width: 60%;
+}
+.btn{
+    padding: 22px 20px;
+    outline: none;
+    border: none;
+    background-color: var(--red-color)
+}
+.btn-sub{
+    font-size:1.6rem ;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.Contact-icon{
+    display: flex;
+    list-style: none;
+    width: 20%;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.icon_item a{
+    font-size: 2.4rem;
+    color: #ccc;
+}
+.Footer_Product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 0px;
+    padding-bottom: 80px !important;
+    border-bottom: 1px solid #ccc;
+}
+
+.Footer_Menu_title{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+.Footer_Menu_items{
+    list-style: none;
+}
+.Footer_items a{
+    color: #bbb9b5;
+    padding: 5px 0px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 20px;
+    display: block;
+}
+.Footer_author{
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Footer_author h1{
+    font-size: 1.6rem;
+    padding: 20px 10px;
+}
+.border{
+    /* display: inline-block; */
+    width: 1px;
+    height: 20px;
+    background-color: #fff;
+}
+
+/* response */
+@media (max-width:63.9375em){
+    .Footer_Product{
+        justify-content: space-around;
+        padding: 10px;
+    }
+    .Contact_Title{
+        width: 100%;
+    }
+    .Contact_form{
+        width: 100%;
+        justify-content: left;
+        margin-top: 5%;
+        flex-wrap: wrap;
+    }
+    .form-control{
+        margin-right: 5%;
+    }
+    .Contact-icon{
+        margin-top: 5%;
+        width: 100%;
+        justify-content: left;
+    }
+    .icon_item{
+        padding-right: 40px;
+    }
+    .Product_logo{
+        width: 60%;
+    }
+    .Footer_menu{
+        width: 32%;
+        padding-bottom: 40px;
+    }
+    .Footer_Container{
+        padding: 20px;
+    }
+
+}
+@media(max-width: 46.1875em) {
+    .Footer_author h1{
+        width: 100%;
+        text-align: center;
+    }
+    .form-control{
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .btn{
+        width: 100%;
+    }
+    .border{
+        display: none;
+    }
+    .Product_logo{
+        width: 100%;
+    }
+    .Footer_menu{
+        width: 100%;
+        padding-top: 40px;
+    }
+    
+}

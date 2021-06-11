@@ -1,0 +1,119 @@
+.Slider{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slider_container{
+    position: relative;
+    width: 100%;
+}
+.slider__img{
+    min-height: 700px;
+    width: 100%;
+    object-fit: cover;
+}
+.slider__box{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    text-align: center;
+    max-width: 40%;
+
+}
+.slider_title{
+    color: #ff2020;
+    /* font-family: "Clicker Script",cursive; */
+    font-size: 4rem;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+.slider_content{
+    font-size: 5rem;
+    animation: scaleIn 1s forwards;
+}
+@keyframes scaleIn{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.slider_context{
+    font-size: 1.6rem;
+    padding: 10px 0px;
+    color: rgb(104, 101, 101);
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.8;
+    animation: UpIn 1s forwards;
+}
+.btn{
+
+}
+.btn_slider{
+    background-color: #141414;
+    padding: 10px 30px !important;
+    font-size: 1.8rem;
+    color: rgb(230, 219, 219);
+    text-shadow: #141414;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s;
+    animation: UpIn 1s forwards;
+    transition-delay: 1s;
+    opacity: 0;
+}
+@keyframes UpIn{
+    0%{
+        transform: translateY(200%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.btn_slider:hover{
+    transform: scale(1.2);
+}
+.button__left, .button__right{
+    position:absolute;
+    top: 40%;
+    font-size: 1.8rem;
+    padding: 20px 10px;
+    background-color: rgba(204, 204, 204,0.5);
+    cursor: pointer;
+}
+.button__left{
+    left: 0;
+}
+.button__right{
+    right: 0;
+}
+/* response */
+@media (max-width:63.9375em) {
+    .slider__img{
+        min-height: 450px;
+    }
+    .slider__box{
+        top: 16%;
+        max-width: 60%;
+    }
+    .slider_title{
+        font-size: 2rem;
+    }
+    .slider_content{
+        font-size: 3rem;
+    }
+    .slider_context{
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width: 46.1875em) {
+    .Nav_options {
+        /* display: none; */
+    }
+}

@@ -1,0 +1,26 @@
+.SectionTitle_container{
+    background-color: #F3EAD8;
+    padding: 40px 20px;
+
+}
+.SectionTitle_title h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+}
+.SectionTitle_redirect {
+    display: flex;
+    list-style: none;
+    font-size: 1.4rem;
+    color: #ccc;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.SectionTitle_item a{
+    color: rgb(79, 75, 75);
+
+    
+}
+.SectionTitle_item a:hover{
+    color: rgb(232, 83, 83);
+}
